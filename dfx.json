@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "opend_backend": {
+      "main": "src/opend_backend/main.mo",
+      "type": "motoko"
+    },
+    "opend_frontend": {
+      "dependencies": [
+        "opend_backend"
+      ],
+      "source": [
+        "src/opend_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "opend_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
